@@ -67,13 +67,13 @@ def currency(message):
 
 
 # Время
-@bot.message_handler(content_types=['text'])
-def time(time):
-    t = datetime.time(datetime.now())
-    if t == ('14:00:00:000000'):
-        return bot.send_message(message.chat.id, text=rate_list['EUR', 'USD', "RUB", 'CNY'])
-    else:
-        return None
+#@bot.message_handler(content_types=['text'])
+#def time(time):
+#    t = datetime.time(datetime.now())
+#    if t == ('14:00:00:000000'):
+#        bot.send_message(message.chat.id, text=rate_list['EUR', 'USD', "RUB", 'CNY'])
+#    else:
+#        pass
 
 
 bot.polling(non_stop=True, interval=0)
